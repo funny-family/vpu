@@ -1,0 +1,29 @@
+{
+  "name": "@vpu",
+  "version": "1.0.0",
+  "description": "Vue Primitive Components",
+  "packageManager": "pnpm@7.24.3",
+  "author": "funny-family <https://github.com/funny-family>",
+  "license": "MIT",
+  "keywords": [
+    "components",
+    "utils",
+    "vue",
+    "ui"
+  ],
+  "scripts": {
+    "storybook:run": "start-storybook -p 6006",
+    "storybook:build": "build-storybook"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vitest/ui": "^0.27.1",
+    "@vpu/components": "workspace:*",
+    "@vpu/utils": "workspace:*",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "vitest": "^0.27.1"
+  }
+}

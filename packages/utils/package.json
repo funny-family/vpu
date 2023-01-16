@@ -1,0 +1,34 @@
+{
+  "name": "@vpu/utils",
+  "version": "1.0.0",
+  "description": "vpu utils",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "unpkg": "./index.iife.min.js",
+  "jsdelivr": "./index.iife.min.js",
+  "types": "./index.d.ts",
+  "homepage": "https://github.com/funny-family/vpu#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funny-family/vpu.git",
+    "directory": "packages/utils"
+  },
+  "bugs": {
+    "url": "https://github.com/funny-family/vpu/issues"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.cjs",
+      "import": "./index.mjs"
+    }
+  },
+  "keywords": [
+    "vue",
+    "utils",
+    "vpu"
+  ],
+  "author": "funny-family <https://github.com/funny-family>",
+  "license": "MIT",
+  "sideEffects": false
+}
