@@ -11,9 +11,12 @@
     "vue",
     "ui"
   ],
+  "engines" : {
+    "npm" : ">=8.0.0",
+    "node" : ">=16.0.0 <18.0.0"
+  },
   "scripts": {
-    "storybook:run": "start-storybook -p 6006",
-    "storybook:build": "build-storybook"
+    "dev": "pnpm -r --filter=./packages/** run dev"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
