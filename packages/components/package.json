@@ -35,5 +35,9 @@
   "dependencies": {
     "@vpu/utils": "workspace:*",
     "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0"
   }
 }
