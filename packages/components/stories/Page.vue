@@ -61,6 +61,9 @@
 <script>
 import './page.css';
 import MyHeader from './Header.vue';
+import { log } from '@vpu/utils';
+
+log('Page');
 
 export default {
   name: 'my-page',

@@ -18,8 +18,8 @@
     "skipDefaultLibCheck": true,
     "noUnusedLocals": true,
     "paths": {
-      "@vpu/components": ["./packages/components/index.ts"],
-      "@vpu/utils": ["./packages/utils/index.ts"],
+      "@vpu/components": ["./packages/components/src/index.ts"],
+      "@vpu/utils": ["./packages/utils/src/index.ts"],
     },
     "types": [
       "vitest",

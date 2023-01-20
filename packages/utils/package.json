@@ -2,11 +2,11 @@
   "name": "@vpu/utils",
   "version": "1.0.0",
   "description": "vpu utils",
-  "main": "./index.cjs",
-  "module": "./index.mjs",
-  "unpkg": "./index.iife.min.js",
-  "jsdelivr": "./index.iife.min.js",
-  "types": "./index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "unpkg": "./dist/index.iife.min.js",
+  "jsdelivr": "./dist/index.iife.min.js",
+  "types": "./dist/index.d.ts",
   "homepage": "https://github.com/funny-family/vpu#readme",
   "repository": {
     "type": "git",
@@ -18,9 +18,9 @@
   },
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "require": "./index.cjs",
-      "import": "./index.mjs"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     }
   },
   "keywords": [
@@ -30,5 +30,9 @@
   ],
   "author": "funny-family <https://github.com/funny-family>",
   "license": "MIT",
-  "sideEffects": false
+  "sideEffects": false,
+  "scripts": {
+    "dev": "pnpm typescript:watch",
+    "typescript:watch": "tsc --watch"
+  }
 }

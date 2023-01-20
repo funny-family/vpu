@@ -16,7 +16,7 @@
     "node" : ">=16.0.0 <18.0.0"
   },
   "scripts": {
-    "dev": "pnpm -r --filter=./packages/** run dev"
+    "dev": "pnpm -r --stream --parallel --filter=./packages/** run dev"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
