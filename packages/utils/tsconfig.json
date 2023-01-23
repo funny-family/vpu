@@ -1,13 +1,5 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "rootDir": "src",
-    "outDir": "dist",
-    "declaration": true,
-    "sourceMap": true,
-    "removeComments": true,
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -17,6 +9,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
-  }
+    "noFallthroughCasesInSwitch": true,
+    "module": "es6",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "outDir": "dist",
+    "sourceRoot": "src"
+  },
 }

@@ -2,11 +2,6 @@
   "name": "@vpu/utils",
   "version": "1.0.0",
   "description": "vpu utils",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "unpkg": "./dist/index.iife.min.js",
-  "jsdelivr": "./dist/index.iife.min.js",
-  "types": "./dist/index.d.ts",
   "homepage": "https://github.com/funny-family/vpu#readme",
   "repository": {
     "type": "git",
@@ -16,13 +11,21 @@
   "bugs": {
     "url": "https://github.com/funny-family/vpu/issues"
   },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./*": "./*"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "vue",
     "utils",
@@ -32,7 +35,9 @@
   "license": "MIT",
   "sideEffects": false,
   "scripts": {
-    "dev": "pnpm typescript:watch",
-    "typescript:watch": "tsc --watch"
+    "dev": "pnpm build:watch",
+    "typescript:watch": "tsc --watch",
+    "build": "vite build",
+    "build:watch": "vite build --watch --config ./vite.config.ts"
   }
 }

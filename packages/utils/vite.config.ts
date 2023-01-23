@@ -1,8 +1,7 @@
 import { resolve } from 'path';
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
+import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
+import projectPackage from './package.json';
 
 export default defineConfig({
   build: {
@@ -10,14 +9,14 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es', 'cjs', 'umd'],
       fileName: (format) => `index.${format}.js`,
-      name: 'vpu-components',
+      name: 'vpu-utils',
     },
   },
   plugins: [
-    vue(),
-    vueJsx(),
     dts({
       insertTypesEntry: true,
     }),
   ],
 });
+
+// https://stackoverflow.com/questions/71726084/how-do-i-make-vite-build-my-files-every-time-a-change-is-made

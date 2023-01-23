@@ -2,11 +2,6 @@
   "name": "@vpu/components",
   "version": "1.0.0",
   "description": "vpu components",
-  "main": "./index.cjs",
-  "module": "./index.mjs",
-  "unpkg": "./index.iife.min.js",
-  "jsdelivr": "./index.iife.min.js",
-  "types": "./index.d.ts",
   "homepage": "https://github.com/funny-family/vpu#readme",
   "repository": {
     "type": "git",
@@ -16,13 +11,21 @@
   "bugs": {
     "url": "https://github.com/funny-family/vpu/issues"
   },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js",
-      "require": "./index.cjs"
-    }
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./*": "./*"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "vue",
     "components",
@@ -54,6 +57,8 @@
   "scripts": {
     "dev": "pnpm storybook:run",
     "storybook:run": "start-storybook -p 6006",
-    "storybook:build": "build-storybook"
+    "storybook:build": "build-storybook",
+    "build": "vite build",
+    "build:watch": "vite build --watch --config ./vite.config.ts"
   }
 }
