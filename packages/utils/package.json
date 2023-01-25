@@ -1,7 +1,7 @@
 {
-  "name": "@vpu/utils",
+  "name": "@pu/utils",
   "version": "1.0.0",
-  "description": "vpu utils",
+  "description": "utils",
   "homepage": "https://github.com/funny-family/vpu#readme",
   "repository": {
     "type": "git",
@@ -11,7 +11,6 @@
   "bugs": {
     "url": "https://github.com/funny-family/vpu/issues"
   },
-  "type": "module",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",

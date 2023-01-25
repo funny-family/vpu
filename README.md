@@ -1,1 +1,1 @@
-## vpu - Vue Primitive UI
+## @pu - Primitive UI

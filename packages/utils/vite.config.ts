@@ -9,14 +9,15 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es', 'cjs', 'umd'],
       fileName: (format) => `index.${format}.js`,
-      name: 'vpu-utils',
+      name: 'pu-utils',
     },
   },
-  plugins: [
-    dts({
-      insertTypesEntry: true,
-    }),
-  ],
+  resolve: {
+    alias: {
+      '@src': resolve(__dirname, 'src'),
+    },
+  },
+  plugins: [dts({ insertTypesEntry: true })],
 });
 
 // https://stackoverflow.com/questions/71726084/how-do-i-make-vite-build-my-files-every-time-a-change-is-made

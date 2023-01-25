@@ -63,7 +63,7 @@ import './page.css';
 import * as vue from 'vue';
 import { LinkTo } from '@storybook/addon-links'
 import MyHeader from './Header.vue';
-import { log } from '@vpu/utils';
+import { log } from '@pu/utils';
 
 log('Page');
 console.log('vue:', vue);

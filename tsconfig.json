@@ -18,21 +18,11 @@
     "skipDefaultLibCheck": true,
     "noUnusedLocals": true,
     "paths": {
-      "@vpu/components": ["./packages/components/src/index.ts"],
-      "@vpu/utils": ["./packages/utils/src/index.ts"],
+      "@pu/utils": ["./packages/utils/src/index.ts"],
+      "@pu/vue": ["./packages/vue/src/index.ts"]
     },
-    "types": [
-      "vitest",
-      "vitest/globals",
-    ]
+    "types": ["vitest", "vitest/globals"]
   },
-  "include": [
-    "packages",
-    "vitest.config.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.md",
-    "**/dist",
-  ]
+  "include": ["packages", "vitest.config.ts"],
+  "exclude": ["node_modules", "**/*.md", "**/dist"]
 }

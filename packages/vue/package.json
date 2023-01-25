@@ -1,17 +1,16 @@
 {
-  "name": "@vpu/components",
+  "name": "@pu/vue",
   "version": "1.0.0",
-  "description": "vpu components",
+  "description": "vue primitive components",
   "homepage": "https://github.com/funny-family/vpu#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/funny-family/vpu.git",
-    "directory": "packages/components"
+    "directory": "packages/vue"
   },
   "bugs": {
     "url": "https://github.com/funny-family/vpu/issues"
   },
-  "type": "module",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
@@ -36,7 +35,7 @@
   "license": "MIT",
   "sideEffects": false,
   "dependencies": {
-    "@vpu/utils": "workspace:*",
+    "@pu/utils": "workspace:*",
     "vue": "^3.2.25"
   },
   "devDependencies": {

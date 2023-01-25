@@ -1,6 +1,22 @@
 {
-  "cSpell.words": [
-    "iife",
-    "jsdelivr"
-  ]
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "node_modules/": false
+  },
+  "eslint.format.enable": true,
+  "eslint.enable": false, // chnage to "true" after setup eslint config
+  "eslint.alwaysShowStatus": true,
+  "eslint.nodePath": "./node_modules",
+  "eslint.options": {
+    "extensions": [".html", ".js", ".ts", ".jsx", ".tsx"]
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "html",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "cSpell.words": ["iife", "jsdelivr"]
 }

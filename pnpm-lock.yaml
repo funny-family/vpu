@@ -4,27 +4,31 @@ importers:
 
   .:
     specifiers:
+      '@pu/utils': workspace:*
+      '@pu/vue': workspace:*
       '@types/node': ^18.11.18
       '@vitest/ui': ^0.27.1
-      '@vpu/components': workspace:*
-      '@vpu/utils': workspace:*
       typescript: ^4.9.4
       vite: ^4.0.4
       vite-plugin-dts: ^1.7.1
       vitest: ^0.27.1
     devDependencies:
+      '@pu/utils': link:packages/utils
+      '@pu/vue': link:packages/vue
       '@types/node': 18.11.18
       '@vitest/ui': 0.27.1
-      '@vpu/components': link:packages/components
-      '@vpu/utils': link:packages/utils
       typescript: 4.9.4
       vite: 4.0.4_@types+node@18.11.18
       vite-plugin-dts: 1.7.1_vite@4.0.4
       vitest: 0.27.1_@vitest+ui@0.27.1
 
-  packages/components:
+  packages/utils:
+    specifiers: {}
+
+  packages/vue:
     specifiers:
       '@babel/core': ^7.20.12
+      '@pu/utils': workspace:*
       '@storybook/addon-actions': ^6.5.15
       '@storybook/addon-essentials': ^6.5.15
       '@storybook/addon-interactions': ^6.5.15
@@ -35,12 +39,11 @@ importers:
       '@storybook/vue3': ^6.5.15
       '@vitejs/plugin-vue': ^4.0.0
       '@vitejs/plugin-vue-jsx': ^3.0.0
-      '@vpu/utils': workspace:*
       babel-loader: ^8.3.0
       vue: ^3.2.25
       vue-loader: ^16.8.3
     dependencies:
-      '@vpu/utils': link:../utils
+      '@pu/utils': link:../utils
       vue: 3.2.45
     devDependencies:
       '@babel/core': 7.20.12
@@ -56,9 +59,6 @@ importers:
       '@vitejs/plugin-vue-jsx': 3.0.0_vue@3.2.45
       babel-loader: 8.3.0_@babel+core@7.20.12
       vue-loader: 16.8.3_vue@3.2.45
-
-  packages/utils:
-    specifiers: {}
 
 packages:
 
@@ -3799,13 +3799,13 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.4.10
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/eslint/8.4.10:
     resolution: {integrity: sha512-Sl/HOqN8NKPmhWo2VBEPm0nvHnu2LL3v9vKo8MEq0EtbJ4eVzGPl41VNPvn5E1i5poMk4/XD8UriLHpJvEP/Nw==}
     dependencies:
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
     dev: true
 
@@ -6571,7 +6571,7 @@ packages:
       eslint-scope: 7.1.1
       eslint-utils: 3.0.0_eslint@8.4.1
       eslint-visitor-keys: 3.3.0
-      espree: 9.2.0
+      espree: 9.4.1
       esquery: 1.4.0
       esutils: 2.0.3
       fast-deep-equal: 3.1.3
