@@ -1,28 +1,9 @@
 {
-  "compilerOptions": {
-    "target": "es2017",
-    "module": "esnext",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "declaration": true,
-    "declarationDir": "./types",
-    "resolveJsonModule": true,
-    "rootDir": ".",
-    "baseUrl": ".",
-    "jsx": "preserve",
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "noUnusedLocals": true,
-    "paths": {
-      "@pu/utils": ["./packages/utils/src/index.ts"],
-      "@pu/vue": ["./packages/vue/src/index.ts"]
-    },
-    "types": ["vitest", "vitest/globals"]
-  },
-  "include": ["packages", "vitest.config.ts"],
-  "exclude": ["node_modules", "**/*.md", "**/dist"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.web.json" },
+    { "path": "./tsconfig.node.json" },
+    { "path": "./tsconfig.vite-config.json" },
+    { "path": "./tsconfig.vitest.json" }
+  ]
 }
