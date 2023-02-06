@@ -1,20 +1,23 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "target": "es2018",
-    "module": "esnext",
+    "target": "ESNext",
+    "module": "ESNext",
     "baseUrl": ".",
+    "rootDir": ".",
     "sourceMap": false,
     "moduleResolution": "node",
-    "allowJs": false,
+    "allowJs": true,
     "strict": true,
     "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "resolveJsonModule": true,
+    "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
     "esModuleInterop": true,
     "removeComments": false,
-    "rootDir": ".",
-    "types": [],
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
     "paths": {
       "@pu/*": ["./packages/*"]
     }

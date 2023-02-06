@@ -3,9 +3,8 @@
   "compilerOptions": {
     "composite": true,
     "lib": ["ES2021", "DOM", "DOM.Iterable"],
-    "types": ["node", "jsdom"],
-    "skipLibCheck": true
+    "types": ["jsdom"],
   },
-  "include": ["packages", "vitest.setup.ts"],
+  "include": ["packages", "vitest.setup.ts", "**/vitest.config.*"],
   "exclude": ["node_modules", "dist", "**/*.md"]
 }
