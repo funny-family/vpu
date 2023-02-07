@@ -1,12 +1,15 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "files.exclude": {
     "node_modules/": false
   },
   "files.eol": "\n",
   "eslint.format.enable": true,
-  "eslint.enable": false, // chnage to "true" after setup eslint config
+  "eslint.enable": true,
   "eslint.alwaysShowStatus": true,
   "eslint.nodePath": "./node_modules",
   "eslint.options": {
@@ -19,5 +22,13 @@
     "javascriptreact",
     "typescriptreact"
   ],
-  "cSpell.words": ["iife", "jsdelivr"]
+  "cSpell.words": [
+    "additionals",
+    "iife",
+    "jsdelivr",
+    "linebreak",
+    "nonblock",
+    "plusplus",
+    "rushstack"
+  ]
 }

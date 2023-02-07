@@ -11,7 +11,10 @@ export default {
 };
 
 const Template = () => ({
-  // Components used in your story `template` are defined in the `components` object
+  /*
+    Components used in your story `template`
+    are defined in the `components` object
+  */
   components: { MyPage },
 
   // Here we define the `template`
