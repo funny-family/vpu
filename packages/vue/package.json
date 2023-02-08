@@ -50,7 +50,11 @@
     "@storybook/vue3": "^6.5.15",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
     "babel-loader": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-vue": "^9.9.0",
     "vue-loader": "^16.8.3"
   },
   "scripts": {

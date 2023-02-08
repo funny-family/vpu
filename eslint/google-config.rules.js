@@ -227,6 +227,8 @@ exports.googleConfig = {
       code: 80,
       tabWidth: 2,
       ignoreUrls: true,
+      ignoreStrings: true,
+      ignoreRegExpLiterals: true,
     },
   ],
   // 'max-lines': 'off',
@@ -279,30 +281,31 @@ exports.googleConfig = {
   // 'padding-line-between-statements': 'off',
   'quote-props': ['error', 'consistent'],
   quotes: ['error', 'single', { allowTemplateLiterals: true }],
-  'require-jsdoc': [
-    'error',
-    {
-      require: {
-        FunctionDeclaration: true,
-        MethodDefinition: true,
-        ClassDeclaration: true,
-      },
-    },
-  ],
+  // 'require-jsdoc': [
+  //   'error',
+  //   {
+  //     require: {
+  //       FunctionDeclaration: true,
+  //       MethodDefinition: true,
+  //       ClassDeclaration: true,
+  //     },
+  //   },
+  // ],
   semi: 'error',
   'semi-spacing': 'error',
   // 'semi-style': 'off',
   // 'sort-keys': 'off',
   // 'sort-vars': 'off',
   'space-before-blocks': 'error',
-  'space-before-function-paren': [
-    'error',
-    {
-      asyncArrow: 'always',
-      anonymous: 'never',
-      named: 'never',
-    },
-  ],
+  // 'space-before-function-paren': [
+  //   'error',
+  //   {
+  //     asyncArrow: 'always',
+  //     anonymous: 'never',
+  //     named: 'never',
+  //   },
+  // ],
+  'space-before-function-paren': ['error', 'never'],
   // 'space-in-parens': 'off',
   // 'space-infix-ops': 'off',
   // 'space-unary-ops': 'off',
