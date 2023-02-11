@@ -24,12 +24,14 @@
   ],
   "cSpell.words": [
     "additionals",
+    "codegen",
     "hygen",
     "iife",
     "jsdelivr",
     "linebreak",
     "nonblock",
     "plusplus",
-    "rushstack"
+    "rushstack",
+    "unimported"
   ]
 }
