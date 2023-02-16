@@ -8,7 +8,7 @@ module.exports = {
   bracketSameLine: false,
   htmlWhitespaceSensitivity: 'css',
   singleQuote: true,
-  trailingComma: 'es5',
+  trailingComma: 'all',
   printWidth: 80,
   endOfLine: 'lf',
   singleAttributePerLine: true,
