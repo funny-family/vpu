@@ -193,27 +193,28 @@ exports.googleConfig = {
   // 'id-blacklist': 'off',
   // 'id-length': 'off',
   // 'id-match': 'off',
-  indent: [
-    'error',
-    2,
-    {
-      CallExpression: {
-        arguments: 2,
-      },
-      FunctionDeclaration: {
-        body: 1,
-        parameters: 2,
-      },
-      FunctionExpression: {
-        body: 1,
-        parameters: 2,
-      },
-      MemberExpression: 2,
-      ObjectExpression: 1,
-      SwitchCase: 1,
-      ignoredNodes: ['ConditionalExpression'],
-    },
-  ],
+  // indent: [
+  //   'error',
+  //   2,
+  //   {
+  //     CallExpression: {
+  //       arguments: 2,
+  //     },
+  //     FunctionDeclaration: {
+  //       body: 1,
+  //       parameters: 2,
+  //     },
+  //     FunctionExpression: {
+  //       body: 1,
+  //       parameters: 2,
+  //     },
+  //     MemberExpression: 2,
+  //     ObjectExpression: 1,
+  //     SwitchCase: 1,
+  //     ignoredNodes: ['ConditionalExpression'],
+  //   },
+  // ],
+  indent: ['error', 2],
   // 'jsx-quotes': 'off',
   'key-spacing': 'error',
   'keyword-spacing': 'error',
@@ -297,15 +298,14 @@ exports.googleConfig = {
   // 'sort-keys': 'off',
   // 'sort-vars': 'off',
   'space-before-blocks': 'error',
-  // 'space-before-function-paren': [
-  //   'error',
-  //   {
-  //     asyncArrow: 'always',
-  //     anonymous: 'never',
-  //     named: 'never',
-  //   },
-  // ],
-  'space-before-function-paren': ['error', 'never'],
+  'space-before-function-paren': [
+    'error',
+    {
+      asyncArrow: 'always',
+      anonymous: 'never',
+      named: 'never',
+    },
+  ],
   // 'space-in-parens': 'off',
   // 'space-infix-ops': 'off',
   // 'space-unary-ops': 'off',
