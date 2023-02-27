@@ -1,4 +1,7 @@
 import MyButton from './Button.vue';
+import styles from './test.module.css';
+
+console.log(123123, styles);
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
@@ -17,9 +20,15 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
 const Template = (args) => ({
-  // Components used in your story `template` are defined in the `components` object
+  /*
+    Components used in your story `template`
+    are defined in the `components` object
+  */
   components: { MyButton },
-  // The story's `args` need to be mapped into the template through the `setup()` method
+  /*
+    The story's `args` need to be mapped into the template
+    through the `setup()` method
+  */
   setup() {
     return { args };
   },

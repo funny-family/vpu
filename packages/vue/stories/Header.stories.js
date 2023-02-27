@@ -10,9 +10,15 @@ export default {
 };
 
 const Template = (args) => ({
-  // Components used in your story `template` are defined in the `components` object
+  /*
+    Components used in your story `template`
+    are defined in the `components` object
+  */
   components: { MyHeader },
-  // The story's `args` need to be mapped into the template through the `setup()` method
+  /*
+    The story's `args` need to be mapped into the template
+    through the `setup()` method
+  */
   setup() {
     // Story args can be spread into the returned object
     return { ...args };

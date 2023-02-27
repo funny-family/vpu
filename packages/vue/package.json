@@ -62,6 +62,7 @@
     "storybook:run": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "build": "vite build",
-    "build:watch": "vite build --watch --config ./vite.config.ts"
+    "build:watch": "vite build --watch --config ./vite.config.ts",
+    "codegen:component": "hygen new component"
   }
 }

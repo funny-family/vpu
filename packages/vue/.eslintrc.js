@@ -17,7 +17,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
-    'plugin:vue/vue3-recommended',
+    // 'plugin:vue/vue3-recommended',
     'plugin:prettier/recommended',
   ],
   plugins: ['prettier'],
@@ -31,6 +31,7 @@ module.exports = {
   rules: {
     ...googleConfig,
     ...additionalsConfig,
+    // 'vue/prefer-import-from-vue': 'warn',
   },
   overrides: [
     {
@@ -60,6 +61,7 @@ module.exports = {
           jsx: true,
         },
         project: ['./tsconfig.json'],
+        // tsconfigRootDir: __dirname,
       },
       rules: {
         ...googleConfig,

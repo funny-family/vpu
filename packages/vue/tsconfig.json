@@ -5,13 +5,17 @@
     // "useDefineForClassFields": true,
     "jsx": "preserve",
     "lib": ["ESNext", "DOM"],
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      // "vue": ["./src/@types/vue/index.ts"]
+    }
   },
   "include": [
+    "./.storybook/**/*.ts",
     "./src/**/*.ts",
     "./src/**/*.d.ts",
     "./src/**/*.tsx",
-    "./src/**/*.vue"
+    "./src/**/*.vue",
   ],
   "exclude": ["./dist", "./node_modules"]
 }

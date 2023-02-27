@@ -2,6 +2,10 @@
  * @typedef { import("@storybook/core-common").StorybookConfig } StorybookConfig
  */
 
+const { resolve } = require('path');
+const { loadConfigFromFile, mergeConfig } = require('vite');
+const eslint = require('vite-plugin-eslint').default;
+
 /** @type {StorybookConfig} */
 module.exports = {
   stories: [
@@ -19,5 +23,24 @@ module.exports = {
   },
   features: {
     storyStoreV7: true,
+  },
+  typescript: {
+    check: false,
+    checkOptions: {},
+  },
+  async viteFinal(previousConfig) {
+    const { config } = await loadConfigFromFile(
+      resolve(__dirname, '../vite.config.ts'),
+    );
+
+    return mergeConfig(previousConfig, {
+      ...config,
+      plugins: [
+        eslint({
+          exclude: [/virtual:/, /node_modules/, /dist/],
+          // eslintPath: resolve(__dirname, '../.eslintrc.js'),
+        }),
+      ],
+    });
   },
 };

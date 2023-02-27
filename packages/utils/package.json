@@ -35,8 +35,8 @@
   "sideEffects": false,
   "scripts": {
     "dev": "pnpm build:watch",
-    "typescript:watch": "tsc --watch",
     "build": "vite build",
-    "build:watch": "vite build --watch --config ./vite.config.ts"
+    "build:watch": "vite build --watch --config ./vite.config.ts",
+    "codegen:util": "hygen new util"
   }
 }

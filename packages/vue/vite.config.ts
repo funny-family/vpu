@@ -1,10 +1,13 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
+// import { hyphenate } from '@vue/shared';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import dts from 'vite-plugin-dts';
-// import svgLoader from 'vite-svg-loader';
 
+// https://www.npmjs.com/package/vite-plugin-css-modules
+
+// module.exports = defineConfig({
 export default defineConfig({
   build: {
     lib: {
@@ -22,15 +25,21 @@ export default defineConfig({
       },
     },
   },
-  resolve: {
-    alias: {
-      '@src': resolve(__dirname, 'src'),
+  css: {
+    modules: {
+      generateScopedName: (name, filename, css) => {
+        // console.log('"generateScopedName":', { name, filename, css });
+        // console.log('"hyphenate(name)":', hyphenate(name));
+
+        // // transform "mainHeader" class name to "main-header"
+        // return hyphenate(name);
+        return name;
+      },
     },
   },
   plugins: [
     vue(),
     vueJsx({ enableObjectSlots: false }),
     dts({ insertTypesEntry: true }),
-    // svgLoader(),
   ],
 });
